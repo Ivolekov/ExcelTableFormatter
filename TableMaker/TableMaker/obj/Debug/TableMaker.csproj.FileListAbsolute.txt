@@ -1,0 +1,17 @@
+c:\users\ivo\documents\visual studio 2015\Projects\TableMaker\TableMaker\bin\Debug\TableMaker.exe.config
+C:\Users\Ivo\Documents\Visual Studio 2015\Projects\TableMaker\TableMaker\obj\Debug\TableMaker.csprojResolveAssemblyReference.cache
+C:\Users\Ivo\Documents\Visual Studio 2015\Projects\TableMaker\TableMaker\obj\Debug\Interop.STROKESCRIBECLSLib.dll
+C:\Users\Ivo\Documents\Visual Studio 2015\Projects\TableMaker\TableMaker\obj\Debug\TableMaker.csproj.ResolveComReference.cache
+C:\Users\Ivo\Documents\Visual Studio 2015\Projects\TableMaker\TableMaker\bin\Debug\TableMaker.exe
+C:\Users\Ivo\Documents\Visual Studio 2015\Projects\TableMaker\TableMaker\bin\Debug\TableMaker.pdb
+C:\Users\Ivo\Documents\Visual Studio 2015\Projects\TableMaker\TableMaker\obj\Debug\TableMaker.exe
+C:\Users\Ivo\Documents\Visual Studio 2015\Projects\TableMaker\TableMaker\obj\Debug\TableMaker.pdb
+C:\Users\Ivo\Desktop\TableMaker\TableMaker\bin\Debug\TableMaker.exe.config
+C:\Users\Ivo\Desktop\TableMaker\TableMaker\bin\Debug\TableMaker.exe
+C:\Users\Ivo\Desktop\TableMaker\TableMaker\bin\Debug\TableMaker.pdb
+C:\Users\Ivo\Desktop\TableMaker\TableMaker\obj\Debug\TableMaker.csproj.ResolveComReference.cache
+C:\Users\Ivo\Desktop\TableMaker\TableMaker\obj\Debug\TableMaker.csproj.CoreCompileInputs.cache
+C:\Users\Ivo\Desktop\TableMaker\TableMaker\obj\Debug\TableMaker.exe
+C:\Users\Ivo\Desktop\TableMaker\TableMaker\obj\Debug\TableMaker.pdb
+C:\Users\Ivo\Desktop\TableMaker\TableMaker\bin\Debug\OnBarcode.Barcode.WinForms.dll
+C:\Users\Ivo\Desktop\TableMaker\TableMaker\obj\Debug\TableMaker.csprojResolveAssemblyReference.cache
