@@ -15,3 +15,11 @@ C:\Users\Ivo\Desktop\TableMaker\TableMaker\obj\Debug\TableMaker.exe
 C:\Users\Ivo\Desktop\TableMaker\TableMaker\obj\Debug\TableMaker.pdb
 C:\Users\Ivo\Desktop\TableMaker\TableMaker\bin\Debug\OnBarcode.Barcode.WinForms.dll
 C:\Users\Ivo\Desktop\TableMaker\TableMaker\obj\Debug\TableMaker.csprojResolveAssemblyReference.cache
+C:\Users\Ivo\Desktop\ExcelTableFormatter\TableMaker\TableMaker\bin\Debug\TableMaker.exe.config
+C:\Users\Ivo\Desktop\ExcelTableFormatter\TableMaker\TableMaker\bin\Debug\TableMaker.exe
+C:\Users\Ivo\Desktop\ExcelTableFormatter\TableMaker\TableMaker\bin\Debug\TableMaker.pdb
+C:\Users\Ivo\Desktop\ExcelTableFormatter\TableMaker\TableMaker\bin\Debug\OnBarcode.Barcode.WinForms.dll
+C:\Users\Ivo\Desktop\ExcelTableFormatter\TableMaker\TableMaker\obj\Debug\TableMaker.csproj.ResolveComReference.cache
+C:\Users\Ivo\Desktop\ExcelTableFormatter\TableMaker\TableMaker\obj\Debug\TableMaker.csproj.CoreCompileInputs.cache
+C:\Users\Ivo\Desktop\ExcelTableFormatter\TableMaker\TableMaker\obj\Debug\TableMaker.exe
+C:\Users\Ivo\Desktop\ExcelTableFormatter\TableMaker\TableMaker\obj\Debug\TableMaker.pdb

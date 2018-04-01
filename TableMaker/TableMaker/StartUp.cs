@@ -24,17 +24,20 @@
                      XlCorruptLoad.xlNormalLoad);
             Console.WriteLine("Start...");
             Worksheet clsWorksheet = clsWorkbook.Sheets[1];
+            
             try
             {
+                string setupName = GetSetUpName(clsWorksheet);
                 DeleteColumns(clsWorksheet);
                 AddHeader(clsWorksheet);
-                Range defaultRange = clsWorksheet.get_Range("A1", "E200");
+                Range defaultRange = clsWorksheet.get_Range("A1", "G200");
                 int rowsRange = GetRowsRange(clsWorksheet, defaultRange);
-                Range range = clsWorksheet.get_Range("A1", $"E{rowsRange}");
+                Range range = clsWorksheet.get_Range("A1", $"G{rowsRange}");
                 FormatTable(clsWorksheet, range);
                 AddDataInCells(clsWorksheet, range);
                 CreateDataMatrixCode(clsWorksheet, range, path);
-                range = clsWorksheet.get_Range("A1", $"E{rowsRange-1}");
+                AddSetupName(clsWorksheet, setupName);
+                range = clsWorksheet.get_Range("A1", $"G{rowsRange}");
                 AddBorders(clsWorksheet, range);
 
                 Console.WriteLine("Saving...");
@@ -68,6 +71,17 @@
                 Console.WriteLine("YOUR TABLE WAS CREATED SUCCESSFULLY");
             }
 
+        }
+
+        
+
+        private static string GetSetUpName(Worksheet clsWorksheet)
+        {
+            Console.WriteLine("Get Setup Name...");
+
+            var value = ((Range) clsWorksheet.Cells[1, 4]).Value;
+
+            return value.ToString();
         }
 
         private static void DeleteColumns(Worksheet clsWorksheet)
@@ -106,6 +120,10 @@
             clsWorksheet.Cells[1, 4] = "Бр. Панели";
             //serial number of the panels
             clsWorksheet.Cells[1, 5] = "№ Панел";
+            //Which site must produce
+            clsWorksheet.Cells[1, 6] = "Страни";
+            //Ducumentetion folder
+            clsWorksheet.Cells[1, 7] = "№ Папка";
             ((Range)clsWorksheet.Rows[1]).EntireRow.Font.Bold = true;
         }
 
@@ -171,12 +189,39 @@
                 clsWorksheet.Cells[row, 4] = $"=C{row}/VLOOKUP(B{row},Sheet2!A$1:L$700,5,0)";
             }
 
-            // add bord serial number
+            // add pcb bord serial number
             for (int row = 2; row < range.Rows.Count; row++)
             {
                 //column D
                 clsWorksheet.Cells[row, 5] = $"=VLOOKUP(B{row},Sheet2!A$1:L$700,3,0)";
             }
+
+            //Add site
+            for (int row = 2; row < range.Rows.Count; row++)
+            {
+                //column F
+                clsWorksheet.Cells[row, 6] = $"=VLOOKUP(B{row},Sheet2!A$1:L$700,4,0)";
+            }
+
+            //Add documentation folder
+            for (int row = 2; row < range.Rows.Count; row++)
+            {
+                //column G
+                clsWorksheet.Cells[row, 7] = $"=VLOOKUP(B{row},Sheet2!A$1:L$700,8,0)";
+            }
+        }
+
+        private static void AddSetupName(Worksheet clsWorksheet, string setupName)
+        {
+            Range line = clsWorksheet.Rows[1];
+            line.Insert();
+            clsWorksheet.get_Range("A1", "G1").Merge();
+            clsWorksheet.Cells[1, 1] = setupName;
+            clsWorksheet.get_Range("A1", "A1").Font.Bold = true;
+            clsWorksheet.get_Range("A1", "A1").Font.Size = 24;
+            clsWorksheet.get_Range("A1", "A1").HorizontalAlignment = XlHAlign.xlHAlignCenter;
+            clsWorksheet.get_Range("A1", "A1").VerticalAlignment = XlVAlign.xlVAlignCenter;
+
         }
 
         private static void CreateDataMatrixCode(Worksheet clsWorksheet, Range range, string path)
